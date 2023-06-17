@@ -4,7 +4,7 @@
 /**
  * main - entry point
  *
- * Description: print alphabets in lowercases and uppercases
+ * Description: print alphabets in lowercase and uppercase
  *
  * Return: 0 Success
 */
@@ -14,15 +14,15 @@ int main(void)
 	char ch = 'a';
 	char CH = 'A';
 
-	/*prints a - z*/
+	/*print a - z*/
 	while (ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
 	}
 
-	/*prints A - Z*/
-	while (CH <= Z)
+	/*print A - Z*/
+	while (CH <= 'Z')
 	{
 		putchar(CH);
 		CH++;
