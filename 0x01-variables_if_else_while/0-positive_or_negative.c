@@ -1,22 +1,26 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - entry point
  *
- * Description: A C program that prints
+ * Description: true or false validation
  *
- * Return 0 (Success)
+ * Return: 0 (Success)
 */
 
-int main(void) {
-	int n = n;
+int main(void)
+{
+	int n;
 
-	if(n>0)
-		printf{"n is positive %u\n", n++};
-	if else(n=0)
-		printf{"n is 0 %u\n", n++};
-	else(n<0)
-		printf{"n is negative %u\n", n++};
-
-	return 0;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf("%i n is positive\n", n);
+	else if (n == 0)
+		printf("%i n is zero\n", n);
+	else
+		printf("%i n is negative\n", n);
+	return (0);
 }
