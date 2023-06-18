@@ -28,10 +28,10 @@ int main(void)
 					putchar(' ');
 				}
 			}
-			digit2++;
 		}
-		digit1++;
+		digit2++;
 	}
+	digit1++
 	putchar('\n');
 
 	return (0);
