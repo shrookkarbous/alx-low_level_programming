@@ -9,13 +9,13 @@
  * Return: Always 0 (Success)
 */
 
-int main(void);
+int main(void)
 {
 	char x = 'a';
 
 	while (x <= 'a')
 	{
-		if (x == 'q' || x =='e')
+		if (x == 'q' || x == 'e')
 			x++;
 		putchar(x);
 		x++;
