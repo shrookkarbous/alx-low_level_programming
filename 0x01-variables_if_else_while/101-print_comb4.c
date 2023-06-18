@@ -1,10 +1,10 @@
 #include<stdio.h>
 
 /**
- * main: Entry point
+ * main - Entry point
  *
- * Description: print all possible different combination
- *		of three digits
+ * Description: a program that prints all possible different
+ *		combinations of three digits.
  *
  * Return: Always 0 (Success)
 */
