@@ -15,7 +15,7 @@ int main(void)
 
 	while (x <= 'a')
 	{
-		if (x == 'q' || x == 'e')
+		if (x != 'q' || x != 'e')
 			x++;
 		putchar(x);
 		x++;
