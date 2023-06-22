@@ -1,10 +1,8 @@
 #include"main.h"
 
 /**
- * print_alphabet is a function
- *
- * Description: A Programm that prints the alphabet, in lowercase
- *
+ * print_alphabet - utilizes the on _putchar function to print
+ *		the alphabets a - z
 */
 
 void print_alphabet(void)
