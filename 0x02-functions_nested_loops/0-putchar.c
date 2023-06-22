@@ -10,13 +10,11 @@
 
 int main(void)
 {
-	char me[] ="_putchar";
+	char me[] = "_putchar";
 	int ch;
 
 	for (ch = 0; ch <= 8; ch++)
-	{
-		pritf("%c\n", me);
-	}
-
+		_putchar(me[ch]);
+	_putchar('\n')
 	return (0);
 }
