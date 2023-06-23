@@ -11,7 +11,7 @@
 
 int _isalpha(int c)
 {
-	for (c >= 97; c <= 122; c >= 65; c <= 90;)
+	for (int c >= 97; c <= 122; c >= 65; c <= 90; c++)
 		return (1);
 	return (0);
 }
