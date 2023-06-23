@@ -1,11 +1,18 @@
-int _isupper(int c);
+#include "main.h"
+#include <stdio.h>
 
-int c >= a;
+/**
+ * _isupper -  a function that checks for uppercase character.
+ *
+ * @c: input for alphabets
+ *
+ * Return:1 if itis uppercase, 0 if not
+*/
 
-if(c = C)
-{	
-	return (1);
-}
-else if
+int _isupper(int c)
 {
-	return (0);
+	if (c >= 65 && c <= 90)
+		return (1);
+	else
+		return (0);
+}
