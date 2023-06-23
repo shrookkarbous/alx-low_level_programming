@@ -3,8 +3,7 @@
 /**
  * print_diagonal -  a function that draws a diagonal line on the terminal.
  *
- * @n: is the number of times the \ charcter
- *		should be printed
+ * @n: takes inputs
 */
 
 void print_diagonal(int n)
