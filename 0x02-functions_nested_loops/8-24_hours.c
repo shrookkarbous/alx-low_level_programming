@@ -4,7 +4,7 @@
  * jack_bauer -  A Function prints every minute of the day
 */
 
-void jach_bauer(void)
+void jack_bauer(void)
 {
 	int hr;
 	int min;
