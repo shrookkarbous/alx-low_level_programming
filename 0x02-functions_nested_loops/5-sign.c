@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include "main.h"
 
 /**
@@ -16,22 +15,20 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		puts("=");
-		puts('\n');
+		_putchar(43);
+		return (1);
 	}
-	return (1);
 
-	if else(n < 0)
+	else if (n == 0)
 	{
-		puts("-");
-		puts('\n');
+		_putchar(48);
+		return (0);
 	}
-	return (-1);
 
 	else
 	{
-		puts("0");
-		puts('\n');
+		_putchar(45);
+		return (-1);
 	}
-	return (0);
+
 }
