@@ -3,10 +3,10 @@
 /**
  * *_strcat -  a function that concatenates two strings.
  *
- * @dst: takes inputs
+ * @dest: takes inputs
  * @src: takes inputs
  *
- * Return: dest
+ * Return: pointer to resulting string @dest
 */
 
 char *_strcat(char *dest, char *src)
