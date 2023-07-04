@@ -20,12 +20,12 @@ char *_strpbrk(char *s, char *accept)
 	lnr = 0;
 	while (s[lnr] != '\0')
 	{
-		lnr = 0;
+		lmr = 0;
 		while (accept[lmr] != '\0')
 		{
 			if (accept[lmr] == s[lnr])
 			{
-				c = $s[lnr];
+				c = &s[lnr];
 				return (c);
 			}
 			lmr++;
