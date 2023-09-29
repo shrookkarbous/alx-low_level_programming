@@ -16,7 +16,7 @@ int is_prime_number(int n)
 }
 
 /**
- * priming - is a function
+ * priming - is a function that check prime number
  * @n: integer
  * @m: integer
  * Return: int
