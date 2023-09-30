@@ -41,7 +41,7 @@ int is_palindrome(char *s)
 
 /**
  * search - function searching for plaindrom
- * @*s: pointer to a string
+ * @*s: pointer to string
  * @begain: int the begaining
  * @end: int the end
  * @mod: int
