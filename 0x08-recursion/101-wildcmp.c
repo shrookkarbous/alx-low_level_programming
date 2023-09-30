@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 #include <stdio.h>
 
 char *move_me(char *s2);
