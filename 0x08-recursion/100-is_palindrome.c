@@ -6,7 +6,7 @@ int last_index(char *s);
 
 /**
  * last_index - a function
- * @*s: pointer to a string
+ * @s: pointer to a string
  * Return: int
  */
 
@@ -23,12 +23,9 @@ int last_index(char *s)
 
 /**
  * is_palindrome - a function that returns 1 if
- * a string is a palindrome and 0 if not.
+ *		a string is a palindrome and 0 if not.
  * last_index - a function searches the last index
- * @begain: int
- * @end: int
- * @mod: int
- * @*s: pointer to a string
+ * @s: pointer to a string
  * Return: int
  */
 
@@ -40,8 +37,8 @@ int is_palindrome(char *s)
 }
 
 /**
- * search - function searching for plaindrom
- * @*s: pointer to string
+ * search - a function searching for plaindrom
+ * @s: pointer to string
  * @begain: int the begaining
  * @end: int the end
  * @mod: int
