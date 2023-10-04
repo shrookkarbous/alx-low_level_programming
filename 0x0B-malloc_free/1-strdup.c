@@ -18,8 +18,10 @@ char *_strdup(char *str)
 		return (NULL);
 
 	for (; str[size] != '\0'; size++)
+	;
 
-	c = malloc(size * sizeof(*str));
+	/*+1 on the size puts the end of the string*/
+	c = malloc(size * sizeof(*str) + 1);
 
 	if (c == 0)
 	{
