@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - prints a string followed by a new line 
+ * _puts - prints a string followed by a new line
  * @str : pointer to a string
  * Return: void
  */
@@ -18,15 +18,15 @@ void _puts(char *str)
 }
 
 /**
- * _atoi: to convert a string to integer
- * @s: pointer to a strimg
- * Return: integer
- */
+ * _atoi: a function that converts  a string to integer
+ * @s: a pointer char type string
+ * Return: a converted integer
+*/
 
 int _atoi(const char *s)
 {
 	int sign = 1;
-	unsigned long int response = 0, first_num, i;
+	unsigned long int resp = 0, first_num, i;
 
 	for (first_num = 0; !(s[first_num] >= 48 && s[first_num] <= 57); first_num++)
 	{
@@ -37,8 +37,8 @@ int _atoi(const char *s)
 	}
 	for (i = first_num; s[i] >= 48 && s[i] <= 57; i++)
 	{
-		response *= 10;
-		response += (s[i] - 48);
+		resp *= 10;
+		resp += (s[i] - 48);
 	}
 }
 
@@ -50,15 +50,15 @@ int _atoi(const char *s)
 
 void print_int(unsigned long int n)
 {
-	unsigned long int divisor = 1, i, response;
+	unsigned long int divisor = 1, i, resp;
 
 	for (i = 0; n / divisor > 9; i++, divisor *= 10)
 	;
 
 	for (; divisor >= 1; n %= divisor, divisor /= 10)
-	{
-		response = n / divisor;
-		_putchar('0' + response);
+	{i
+		resp = n / divisor;
+		_putchar('0' + resp);
 	}
 }
 
