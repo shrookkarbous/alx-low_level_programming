@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stddef.h>
 
 /**
  * print_list - a function that prints all the elements of a list_t list
@@ -8,22 +9,22 @@
 
 size_t print_list(const list_t *h)
 {
-	const char *next;
-
-	list_t *h{
-		char data;
+	const list_t *h{
+		char *str;
+		int len;
 		list_t *next;
 	};
 
-	if (h->data != 'NULL')
+	size_t count = 0;
+
+	while (h != NULL)
 	{
-		printf("%c", data);
-		list_t *next;
-		*next = &h;
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
+		h->next;
+		count++;
 	}
-	else if
-	{
-		printf("[0]\n");
-	}
-	Return(list_t);
+	return (count);
 }
