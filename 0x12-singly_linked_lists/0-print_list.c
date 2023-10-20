@@ -8,7 +8,6 @@
 
 size_t print_list(const list_t *h)
 {
-	int n, number_of_nodes;
 	const char *next;
 
 	list_t *h{
