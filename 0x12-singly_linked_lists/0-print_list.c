@@ -9,7 +9,6 @@
 int _strlen(char *s)
 {
 	int i = 0;
-	*s = str[i];
 
 	if (!s)
 		return (0);
