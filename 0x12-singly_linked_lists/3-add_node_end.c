@@ -11,18 +11,28 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *after = malloc(sizeof(list_t));
+	list_t *node = *head;
 
 	if (!head || !after)
 		return (NULL);
-	if (after)
+	if (str)
 	{
-		printf("[%d]%s\n", _strlen(after->str), after->str);
+		after->str = strdup(str)
 		if (!after->str)
 		{
-			free(after);
+			free(after)
 			return (NULL);
 		}
+		after->len = _strlen(after->str);
 	}
-	head->next = *after;
+	if (node)
+	{
+		while (node->next)
+			node = node->next;
+		node->next = after;
+	}
+	else
+		*head = after;
 	return (after);
 }
+
