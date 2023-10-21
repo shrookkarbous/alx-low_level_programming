@@ -9,18 +9,23 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	next = &head;
+	list_t *befor = malloc(sizeof(list_t));
 
-	while (head)
+	if (!head || !befor)
+		return (NULL);
+
+	if (str)
 	{
-		if (head->next)
+		befor->str = strdup(str);
+		if (!befor->str)
 		{
-			printf("%s\n", next->str);
-		}
-		else if
-		{
+			free(befor);
 			return (NULL);
 		}
+		befor->len = _strlen(befor->str);
 	}
-	return (&head);
+
+	befor->next = *head;
+	*head = befor;
+	return (befor);
 }
