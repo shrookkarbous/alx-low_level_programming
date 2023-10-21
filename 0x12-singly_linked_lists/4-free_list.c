@@ -12,6 +12,7 @@ void free_list(list_t *head)
 
 	if (!head)
 		return;
+	node = head;
 	while (node1->next = node2)
 	{
 		if (node1->next != node2)
