@@ -10,18 +10,19 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *next = malloc(sizeof(list_t));
+	list_t *after = malloc(sizeof(list_t));
 
-	if (!head || !next)
+	if (!head || !after)
 		return (NULL);
-	if (next)
+	if (after)
 	{
-		printf("[%d]%s\n", _strlen(next->str), next->str);
-		if (!next->str)
+		printf("[%d]%s\n", _strlen(after->str), after->str);
+		if (!after->str)
 		{
-			free(next);
+			free(after);
 			return (NULL);
 		}
 	}
-	return (next);
+	head->next = *after;
+	return (after);
 }
